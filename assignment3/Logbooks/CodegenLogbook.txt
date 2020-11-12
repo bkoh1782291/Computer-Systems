@@ -1,0 +1,151 @@
+CodeGen
+
+Functions that has added code
+
+walk_var_dec() 
+    - not used for walking var_decs, instead, it is used to update the field number when the var_dec_segment() == "this".
+
+
+walk_constructor() / walk_function() / walk_method()
+    - global variables while_counter and if_counter is reset to 0 here.
+    - an output for "function " + myclassname + '.' + name + ' ' + to_string(sizeofvar) +  '\n' ; is present in all the Functions
+
+    constructor adds :
+        push constant + fieldnumber + \n
+        call Memory.alloc 1
+        pop pointer 0
+
+    method adds :
+        push argument 0
+        pop pointer 0 
+
+
+walk_var()
+
+    added a paramter for var, which is string indicate, which indicates whether it is "push" or "pop", which will make it easier than having a global variable and updating it all the time.
+    in walk_var, it is used to write to output, either (push or pop) +_segment_ + offset
+
+
+walk_let() / walk_let_array()
+
+    walks a let expression and then walk_var(pop);
+
+    walks index, walk_var(push), writes "add\n" to output, walk_expr(expr) then : 
+            pop temp 0
+            pop pointer 1
+            push temp 0
+            pop that 0
+
+/////////////////     2     /////////////////
+
+CodeGen
+
+Functions that has added code
+
+walk_if()
+
+    increments the if_counter
+
+    writes to output the labels for if statement:
+        if-goto IF_TRUE + n
+        goto IF_FALSE + n
+        label IF_TRUE + n
+        walk_statement(if_true)
+        label IF_FALSE + n
+
+
+walk_if_else()
+
+    increments the if_counter
+    walk condition
+        if-goto IF_TRUE + n
+        goto IF_FALSE + n
+        label IF_TRUE + n
+        walk_statement(if_true)
+        goto IF_END + n
+        label IF_FALSE + n
+        walk_statement(if_false)
+        label IF_END + n
+
+
+walk_while()
+
+    increments the while_counter
+    walk_expr(condition)
+    label WHILE_EXP + n
+    not
+    if-goto WHILE_ENND + n
+    walkstatement(body)
+    goto WHILE_EXP
+    label WHILE_END
+
+
+walk_string()
+
+    push constant + string length
+    call String.new 1
+
+    for i < constant_length
+        push constant + constant[i]
+        call string.appendchar 2
+
+
+
+walk_unary_op()
+
+    handles unary ops
+
+    if "-" is found, then write to output neg
+
+    if "~" is found then write to output not 
+
+
+CodeGen
+
+Functions that has added code
+
+////////////////////  3   ///////////////////////
+
+walk_array_index()
+
+walks an ast array index node
+
+    walk the index expression
+    walk a variable with push +segment + offset
+    write to output
+        add
+        pop pointer 1
+        push that 0
+
+
+walk_call_as_function()
+
+walk an subroutine call as function
+
+    walk the subroutine call and then write to output
+        call + classname + .subroutine call name + number of arguments
+
+
+walk_call_as_method()
+
+walk an subroutine call as method
+    
+    depending on the ast_node_kind, we have to either walk_this() or walk_var(push)
+
+    then walk the subroutine call and then write to output
+        call + classname + .subroutine call name + number of arguments
+
+    note : have to add one to the size_of_expr_list() when getting the number of arguments
+
+
+walk_infix_op()
+
+    walk the appropriate operator nodes using VM language, which is one of "+", "-", "*", "/", "&", "|", "<", ">", "=".
+
+
+
+
+
+
+
+

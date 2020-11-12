@@ -1,0 +1,33 @@
+For Lint
+
+functions that need to be added code are :
+
+
+comments : class_Var_decs & subr_decs (complete) 
+
+
+warnings : ast_statement & var_dec
+
+
+errors: ast_constructor, ast_function or ast_method
+
+
+
+    ann a = get_ann(t);
+    a = add_ann_warnings(a, "Unused");
+
+//////
+trying to figure out the warnings for lint.cpp , can't seem to test the condition where they output.
+
+
+///////
+tried feeding in the annotations in copy_var_decs() but it is still not outputting at all. Still very confused
+on where the annotations for var_decs() comes.
+
+
+/////
+tried to replace the original return t in copy_var_dec to this :
+
+return create_var_dec(b, name, segment, offset, type);
+
+but it conflicts with the above functions and break the first test case of annotation comments

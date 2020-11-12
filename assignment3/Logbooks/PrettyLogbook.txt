@@ -1,0 +1,117 @@
+Pretty
+
+changed from using a for loop to append spaces 
+    wspace += ' '
+
+to using the append() function
+    wspace.append(4, ' ');
+
+in walk_subr_decs() if the size is > 1 && i != size-1
+then return a '\n'
+
+
+Constructor / function / method
+
+the output goes as follows for these functions
+
+white space, method, vtype, space, name, lrb, rrb, wspace, lcb, body, rcb.
+
+
+
+Walk_param_list()
+
+writes to output the type, space, name of the variable declaration.
+
+similar to walk_subr_decs() but have to output a comma when condition is met.
+
+
+
+walk_var_decs()
+
+    'walks' the variable declarations, and if there is 'ndecs' then write a newline 
+
+    before the declaration is walked, indentation++, then revert it after it is walked.
+
+
+
+walk_statements()
+
+    'walks the statement(s) nodes'
+
+    abit complicated, but if a statement node is found, and if the statement is part of either a while/if/if-else statement, then insert a newline.
+
+    ast_have_kind() is helpful to compare ast nodes.
+
+
+
+walk_let() / walk_let_array()
+
+    used to 'walk' the let nodes, one for just a normal let statement and the other is for an array declaration.
+
+    let var b = 21;
+
+
+
+walk_if() / walk_if_else()
+
+    writing either an if or if-else statement, 
+
+    "if", lrb, condition, rrb,
+    lcb, body statement, rcb, newline
+
+     or an if_else variant, which adds "else" and lcb, body statement, rcb, newline
+
+
+walk_while()
+
+    returns a while node
+
+    requires indentation, followed by "while", lrb, condition, rrb,
+
+    lcb, body statement, rcb, newline
+
+
+
+walk_return() / walk_return_expr()
+
+    return only writes to output "return ;". Both of these functions require indentation.
+
+    returns the return-expression node, needs indentation and the "return" name.
+
+    return bla ;
+
+
+
+walk_term()
+
+    nothing notable and complicated to mention, pretty straight forward for these statements just have to assign them and write_to_output()
+
+
+////////////////////////////////////////////// NEW ///////////////////////////////////////////////////
+
+Pretty
+
+wrote walk_class_var_decs(), where a different approach is done, pushing back the values into the vector for better output control, so if a static is the current segment and field is the next segment, a newline will be printed, vice versa.
+and the variable declarations can be 'walked' seperately.
+
+
+Pretty
+
+additions for writing to output in walk_param_list(), walk_expr_list(), walk_subr_decs().
+
+if the for-loop size is more than 1 and i does not equal to size-1, then we print a newline
+
+for walk_param_list(), a ',' is required
+
+for walk_expr_list, a '\n' is required
+
+for walk_subr_decs, a '\n' is required.
+
+
+
+Pretty
+
+implemented walk_call_as_function and walk_call_as_method
+
+classname.subr_call_name(subr_call) 
+

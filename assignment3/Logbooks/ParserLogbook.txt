@@ -1,0 +1,121 @@
+	
+Having lots of trouble with parser, did a lot on and off these few days, did not bother to upload to svn
+because there was little progress with the test cases.
+
+And since the test cases do not have much help with what is right or wrong, i am just trying to complete all
+of the code and then de-bug from there. some of my peers suggest a seperate warning function to catch errors
+such as when offset hits -1, which might help with secret tests.
+
+currently the functions that i have not implemented are :
+
+still yet to implement 
+    - parse_param_list
+    - parse_let
+    - parse_do
+    - parse_var_term
+
+i have tried to implement them but they are too hard and might ask a tutor in a workshop tomorrow.
+have to manage the offsets and returns based on the offset, to match the xml code generation.
+
+explaination for some of the more complicated functions so far
+
+
+parse static_var_dec() / parse_field_var_dec()
+
+for this function, tk_static or tk_field is leading the syntax required. Then i did an approach where parse_type() and mustbe(tk_identifier) is collected as an variable and then used later when inserting variables to be push backed into the vector, an static int for counting offset for this function is also used.
+
+while there is a ',' then offset is updated and then the process of inserting the variables take place again, and then the vector gets pushed back a value of create_var_dec()
+
+finishing with a tk_semi.
+
+for these two functions, they are pretty similar but the only differenece is the inital syntax of either tk_static / tk_field and the segment name, 'this' or 'static'.
+
+
+
+
+parse_constructor() / parse_function() / parse_method()
+
+all 3 of these functions have similar structure, since they have the same syntax, just different requirements for mustbe()
+
+firstly, variables are initialized and it starts with a mustbe(constructor/function/method)
+
+then the tokenspelling for these functions are assigned to their respective variables, which are then returned later.
+
+a call for parse_param_list() and parse_subr_body() is required for these functions, which i have not implemented yet.
+
+also, for each of these functions, they all will clear/delete all the variables in the symbol function_table.
+
+
+
+
+parse_var_decs() / parse_var_dec()
+
+pretty similar to parse_static / parse_field_var_dec
+
+again, segment is changed to "local" to match the xml output, and the function has its own unique offset variable.
+
+the only differnece is that if there is a tk_var in parse_var_decs, there will be a push_back of parse_var_dec() functions, which means it will be called many times. based on the xml code, there are examples of this where in between <var>, there will be many other sub tags.
+
+
+
+
+parse_param_list()
+
+syntax was much easier to implement than i thought
+
+i thought a while loop is needed for the whole implementation of type and identifier because of the brackets surrounding it, but turns out it is not needed
+
+similar to parse_static/field_var_dec , we need to insert the variables and push back into the vector decs. and while there is a comma, we shall keep updating the offset and insert new variables and push them back into the vector decs.
+
+other than that, to satisfy the syntax, an if statement to check whether  there is tg_starts_type is at the beginning of the function.
+
+
+
+parse_let()
+
+different apporach to other functions and my previous submission, pretty sure this workshop
+
+starting with a mustbe(let), followed by a lookup for variables and if the offset when looking up variables is -1, re-assign the variable with another lookup_variables(), but using symbol table variable var_table instead
+
+then if there is a left square bracket, then reassign index, next must be tk_eq, reassign parse_expr, next must be tk_semi and then create_let_array with the reassigned variables.
+
+ends with a mustbe(eq) nad mustbe(tk_semi)
+
+returns a create_let()
+
+
+
+parse_do()
+
+starts with mustbe(tk_do), then assign tk_identifier to id and retrive its spelling.
+
+then (call | id_call), which is basically either have(tk_lrb) | have(tk_stop)
+
+tk_lrb will lead to parse_call and a create_call_as_method is passed back as the return value
+
+tk_stop will lead to a parse_id_call, but then we need to lookup for the variable by using either one of the symbol tables, depends on the offset. and if the object offset is -1, call_as_function is called, whereas call_as_method will be called if the offset is something other than -1. we also need to call a create_var() to obtain the variable's name, segment, offset and type in order to pass it into create_call_as_method.
+
+
+
+
+parse_var_term()
+
+the most complicated function to implement by far
+
+mustbe(tk_identifier) is the first syntax to fulfill, then parse_index(), which starts with a left square bracket, for all of these statements, they go along the lines of lookup variable, then create an xml object based on the looked up variables.
+
+tk_stop is similar, it requires parse_id_call(), but is needed an extra call function when the offset is -1, when the offset is -1, then a create_call_as_function is called instead of a create_call_as_method.
+
+tk_lrb requires parse_call, and returns a create_call_as_method() object.
+
+if none of the tokens match, then we lookup the variable and then return a create_var() object instead.
+
+
+create_var(object.name, object.segment,object.offset,object.type)
+
+the object.___ only can occur if we lookup for the variable, which must be assigned as an st_variable, included in the header files. Had this tip from one of the tutors, which made my implementation so much easier.
+
+
+
+
+
