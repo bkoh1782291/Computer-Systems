@@ -1,0 +1,14 @@
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: @, spelling: "@"}
+{kind: identifier, spelling: "hello"}
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: '_'
+Read 10 tokens

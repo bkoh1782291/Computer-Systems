@@ -1,0 +1,48 @@
+
+***** Fatal error!
+error: Expected: "one of 'e' or 'E'" but found: ' '
+Read 26 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 25
+    {kind: space, spelling: " ", line: 1, column: 61}
+token_context:
+   1:  0 4 .3 3.6e-89 12125.34e9 888E0 34 000.000000E-00008 235.e5 
+                                                                  ^
+
+----------------
+token: 20
+    {kind: integer, spelling: "0", line: 1, column: 51}
+token_context:
+   1:  0 4 .3 3.6e-89 12125.34e9 888E0 34 000.000000E-000
+                                                        ^
+
+----------------
+token: 15
+    {kind: space, spelling: " ", line: 1, column: 36}
+token_context:
+   1:  0 4 .3 3.6e-89 12125.34e9 888E0 34 
+                                         ^
+
+----------------
+token: 10
+    {kind: scientific, spelling: "1.212534e+13", original: "12125.34e9", line: 1, column: 17}
+token_context:
+   1:  0 4 .3 3.6e-89 12125.34e9
+                      ^
+
+----------------
+token: 5
+    {kind: ., spelling: ".", line: 1, column: 6}
+token_context:
+   1:  0 4 .
+           ^
+
+----------------

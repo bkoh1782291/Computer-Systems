@@ -1,0 +1,61 @@
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: ','
+Read 30 tokens
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", original: "// This file is part of www.nand2tetris.org\n", line: 1, column: 1}
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+      ^
+
+----------------
+token: 29
+    {kind: identifier, spelling: "x", line: 16, column: 15}
+token_context:
+  15:     // Location on the screen$
+  16:     field int x
+                    ^
+
+----------------
+token: 24
+    {kind: space, spelling: " ", line: 16, column: 4}
+token_context:
+  15:     // Location on the screen$
+  16:     
+         ^
+
+----------------
+token: 19
+    {kind: space, spelling: " ", line: 15, column: 4}
+token_context:
+  14: $
+  15:     
+         ^
+
+----------------
+token: 14
+    {kind: newline, spelling: "\n", line: 13, column: 15}
+token_context:
+  12:  */$
+  13: class Square {$
+                    ^
+
+----------------
+token: 9
+    {kind: identifier, spelling: "class", line: 13, column: 1}
+token_context:
+  12:  */$
+  13: class
+      ^
+
+----------------
+token: 4
+    {kind: newline, spelling: "\n", line: 5, column: 1}
+token_context:
+   4: // File name: projects/10/ExpressionlessSquare/Square.jack$
+   5: $
+      ^
+
+----------------

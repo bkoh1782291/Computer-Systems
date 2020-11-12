@@ -1,0 +1,59 @@
+Read 35 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 34
+    {kind: newline, spelling: "\n", line: 1, column: 62}
+token_context:
+   1:         a+=b/=3*=1-=38-=-=-=-=-=-=-=/=.>>>>>>>><<<<<<<<<<<832$
+                                                                   ^
+
+----------------
+token: 29
+    {kind: <<<, spelling: "<<<", line: 1, column: 48}
+token_context:
+   1:         a+=b/=3*=1-=38-=-=-=-=-=-=-=/=.>>>>>>>><<<
+                                                     ^
+
+----------------
+token: 24
+    {kind: /=, spelling: "/=", line: 1, column: 37}
+token_context:
+   1:         a+=b/=3*=1-=38-=-=-=-=-=-=-=/=
+                                          ^
+
+----------------
+token: 19
+    {kind: -=, spelling: "-=", line: 1, column: 27}
+token_context:
+   1:         a+=b/=3*=1-=38-=-=-=
+                                ^
+
+----------------
+token: 14
+    {kind: integer, spelling: "1", line: 1, column: 18}
+token_context:
+   1:         a+=b/=3*=1
+                       ^
+
+----------------
+token: 9
+    {kind: +=, spelling: "+=", line: 1, column: 10}
+token_context:
+   1:         a+=
+               ^
+
+----------------
+token: 4
+    {kind: space, spelling: " ", line: 1, column: 5}
+token_context:
+   1:      
+          ^
+
+----------------

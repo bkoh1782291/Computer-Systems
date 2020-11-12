@@ -1,0 +1,13 @@
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "D"}
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: '&'
+Read 9 tokens

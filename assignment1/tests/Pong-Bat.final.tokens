@@ -1,0 +1,32 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org"}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems""}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press."}
+{kind: eol_comment, spelling: " File name: projects/11/Pong/Bat.jack."}
+{kind: newline, spelling: "\n"}
+{kind: adhoc_comment, spelling: "*\n * A graphic Pong bat. Has a screen location, width and height.\n * Has methods for drawing, erasing, moving left and right on\n * the screen and changing the width. \n "}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "class"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "Bat"}
+{kind: space, spelling: " "}
+{kind: {, spelling: "{"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: eol_comment, spelling: " The screen location"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "field"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "int"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "x"}
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: ','
+Read 28 tokens

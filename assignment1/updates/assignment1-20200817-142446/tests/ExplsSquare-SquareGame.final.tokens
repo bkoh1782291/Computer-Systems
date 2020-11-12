@@ -1,0 +1,34 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org"}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems""}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press."}
+{kind: eol_comment, spelling: " File name: projects/10/ExpressionlessSquare/SquareGame.jack"}
+{kind: newline, spelling: "\n"}
+{kind: eol_comment, spelling: " Expressionless version of Square.jack."}
+{kind: newline, spelling: "\n"}
+{kind: adhoc_comment, spelling: "*\n * The SquareDance class implements the Square Dance game.\n * In this game you can move a black square around the screen and\n * change its size during the movement.\n * In the beggining, the square is located at the top left corner.\n * Use the arrow keys to move the square.\n * Use 'z' & 'x' to decrement & increment the size.\n * Use 'q' to quit.\n "}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "class"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "SquareGame"}
+{kind: space, spelling: " "}
+{kind: {, spelling: "{"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: eol_comment, spelling: " The square"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "field"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "Square"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "square"}
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: ';'
+Read 30 tokens

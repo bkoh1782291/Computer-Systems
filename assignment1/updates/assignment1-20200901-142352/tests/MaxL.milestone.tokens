@@ -1,0 +1,9 @@
+{kind: newline, spelling: "\n"}
+{kind: @, spelling: "@"}
+{kind: integer, spelling: "0"}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "D"}
+
+***** Fatal error!
+error: Expected: "=" but found: 'M'
+Read 5 tokens

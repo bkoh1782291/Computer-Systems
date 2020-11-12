@@ -1,0 +1,93 @@
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: ';'
+Read 51 tokens
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", original: "// This file is part of www.nand2tetris.org\n", line: 1, column: 1}
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+      ^
+
+----------------
+token: 50
+    {kind: identifier, spelling: "game", line: 13, column: 24}
+token_context:
+  12:     function void main() {$
+  13:         var SquareGame game
+                             ^
+
+----------------
+token: 45
+    {kind: space, spelling: " ", line: 13, column: 8}
+token_context:
+  12:     function void main() {$
+  13:         
+             ^
+
+----------------
+token: 40
+    {kind: space, spelling: " ", line: 13, column: 3}
+token_context:
+  12:     function void main() {$
+  13:    
+        ^
+
+----------------
+token: 35
+    {kind: space, spelling: " ", line: 12, column: 25}
+token_context:
+  11:     /** Initializes a new game and starts it. */    $
+  12:     function void main() 
+                              ^
+
+----------------
+token: 30
+    {kind: identifier, spelling: "void", line: 12, column: 14}
+token_context:
+  11:     /** Initializes a new game and starts it. */    $
+  12:     function void
+                   ^
+
+----------------
+token: 25
+    {kind: space, spelling: " ", line: 12, column: 2}
+token_context:
+  11:     /** Initializes a new game and starts it. */    $
+  12:   
+       ^
+
+----------------
+token: 20
+    {kind: space, spelling: " ", line: 11, column: 50}
+token_context:
+  10: $
+  11:     /** Initializes a new game and starts it. */  
+                                                       ^
+
+----------------
+token: 15
+    {kind: space, spelling: " ", line: 11, column: 2}
+token_context:
+  10: $
+  11:   
+       ^
+
+----------------
+token: 10
+    {kind: space, spelling: " ", line: 9, column: 11}
+token_context:
+   8:  */$
+   9: class Main 
+                ^
+
+----------------
+token: 5
+    {kind: adhoc_comment, spelling: "*\n * The Main class initializes a new Square Dance game and starts it.\n ", original: "/**\n * The Main class initializes a new Square Dance game and starts it.\n */", line: 6, column: 1}
+token_context:
+   5: $
+   6: /**$
+      ^
+
+----------------

@@ -1,0 +1,30 @@
+{kind: space, spelling: " "}
+{kind: integer, spelling: "0"}
+{kind: space, spelling: " "}
+{kind: integer, spelling: "4"}
+{kind: space, spelling: " "}
+{kind: ., spelling: "."}
+{kind: integer, spelling: "3"}
+{kind: space, spelling: " "}
+{kind: scientific, spelling: "3.6e-89"}
+{kind: space, spelling: " "}
+{kind: scientific, spelling: "1.212534e+13"}
+{kind: space, spelling: " "}
+{kind: scientific, spelling: "8.88e+2"}
+{kind: space, spelling: " "}
+{kind: integer, spelling: "34"}
+{kind: space, spelling: " "}
+{kind: integer, spelling: "0"}
+{kind: integer, spelling: "0"}
+{kind: scientific, spelling: "0.0e+0"}
+{kind: integer, spelling: "0"}
+{kind: integer, spelling: "0"}
+{kind: integer, spelling: "0"}
+{kind: integer, spelling: "8"}
+{kind: space, spelling: " "}
+{kind: scientific, spelling: "2.35e+7"}
+{kind: space, spelling: " "}
+
+***** Fatal error!
+error: Expected: "one of 'e' or 'E'" but found: ' '
+Read 26 tokens

@@ -1,0 +1,57 @@
+Read 27 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 26
+    {kind: newline, spelling: "\n", line: 5, column: 15}
+token_context:
+   4:         this$
+   5: do pointer for$
+                    ^
+
+----------------
+token: 21
+    {kind: identifier, spelling: "do", line: 5, column: 1}
+token_context:
+   4:         this$
+   5: do
+      ^
+
+----------------
+token: 16
+    {kind: space, spelling: " ", line: 4, column: 6}
+token_context:
+   3: do   real$
+   4:       
+           ^
+
+----------------
+token: 11
+    {kind: space, spelling: " ", line: 4, column: 1}
+token_context:
+   3: do   real$
+   4:  
+      ^
+
+----------------
+token: 6
+    {kind: space, spelling: " ", line: 3, column: 3}
+token_context:
+   2: $
+   3: do 
+        ^
+
+----------------
+token: 1
+    {kind: space, spelling: " ", line: 1, column: 2}
+token_context:
+   1:   
+       ^
+
+----------------

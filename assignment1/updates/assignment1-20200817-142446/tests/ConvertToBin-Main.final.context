@@ -1,0 +1,109 @@
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: ','
+Read 58 tokens
+Token Contexts:
+
+token: 0
+    {kind: newline, spelling: "\n", line: 1, column: 1}
+token_context:
+   1: $
+      ^
+
+----------------
+token: 57
+    {kind: identifier, spelling: "result", line: 28, column: 13}
+token_context:
+  27:     function void main() {$
+  28:     var int result
+                  ^
+
+----------------
+token: 52
+    {kind: space, spelling: " ", line: 28, column: 4}
+token_context:
+  27:     function void main() {$
+  28:     
+         ^
+
+----------------
+token: 47
+    {kind: {, spelling: "{", line: 27, column: 26}
+token_context:
+  26: $
+  27:     function void main() {
+                               ^
+
+----------------
+token: 42
+    {kind: space, spelling: " ", line: 27, column: 18}
+token_context:
+  26: $
+  27:     function void 
+                       ^
+
+----------------
+token: 37
+    {kind: space, spelling: " ", line: 27, column: 3}
+token_context:
+  26: $
+  27:    
+        ^
+
+----------------
+token: 32
+    {kind: newline, spelling: "\n", line: 24, column: 1}
+token_context:
+  23: $
+  24: $
+      ^
+
+----------------
+token: 27
+    {kind: space, spelling: " ", line: 22, column: 2}
+token_context:
+  21: class Main {$
+  22:   
+       ^
+
+----------------
+token: 22
+    {kind: identifier, spelling: "Main", line: 21, column: 7}
+token_context:
+  20: $
+  21: class Main
+            ^
+
+----------------
+token: 17
+    {kind: newline, spelling: "\n", line: 18, column: 1}
+token_context:
+  17: $
+  18: $
+      ^
+
+----------------
+token: 12
+    {kind: newline, spelling: "\n", line: 13, column: 1}
+token_context:
+  12: $
+  13: $
+      ^
+
+----------------
+token: 7
+    {kind: newline, spelling: "\n", line: 8, column: 1}
+token_context:
+   7: $
+   8: $
+      ^
+
+----------------
+token: 2
+    {kind: newline, spelling: "\n", line: 3, column: 1}
+token_context:
+   2: $
+   3: $
+      ^
+
+----------------

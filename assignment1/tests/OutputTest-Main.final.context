@@ -1,0 +1,93 @@
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: ';'
+Read 47 tokens
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", original: "// This file is part of www.nand2tetris.org\n", line: 1, column: 1}
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+      ^
+
+----------------
+token: 46
+    {kind: identifier, spelling: "s", line: 12, column: 20}
+token_context:
+  11:     function void main() {$
+  12:         var String s
+                         ^
+
+----------------
+token: 41
+    {kind: space, spelling: " ", line: 12, column: 8}
+token_context:
+  11:     function void main() {$
+  12:         
+             ^
+
+----------------
+token: 36
+    {kind: space, spelling: " ", line: 12, column: 3}
+token_context:
+  11:     function void main() {$
+  12:    
+        ^
+
+----------------
+token: 31
+    {kind: space, spelling: " ", line: 11, column: 25}
+token_context:
+  10:      *  methods of the Output class. */$
+  11:     function void main() 
+                              ^
+
+----------------
+token: 26
+    {kind: identifier, spelling: "void", line: 11, column: 14}
+token_context:
+  10:      *  methods of the Output class. */$
+  11:     function void
+                   ^
+
+----------------
+token: 21
+    {kind: space, spelling: " ", line: 11, column: 2}
+token_context:
+  10:      *  methods of the Output class. */$
+  11:   
+       ^
+
+----------------
+token: 16
+    {kind: space, spelling: " ", line: 9, column: 3}
+token_context:
+   8: $
+   9:    
+        ^
+
+----------------
+token: 11
+    {kind: {, spelling: "{", line: 7, column: 12}
+token_context:
+   6: /** Test program for the OS Output class. */$
+   7: class Main {
+                 ^
+
+----------------
+token: 6
+    {kind: newline, spelling: "\n", line: 6, column: 45}
+token_context:
+   5: $
+   6: /** Test program for the OS Output class. */$
+                                                  ^
+
+----------------
+token: 1
+    {kind: eol_comment, spelling: " and the book "The Elements of Computing Systems"", original: "// and the book "The Elements of Computing Systems"\n", line: 2, column: 1}
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+   2: // and the book "The Elements of Computing Systems"$
+      ^
+
+----------------

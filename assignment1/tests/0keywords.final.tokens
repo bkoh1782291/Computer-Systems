@@ -1,0 +1,28 @@
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "for"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "do"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "real"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: this, spelling: "this"}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "do"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "pointer"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "for"}
+{kind: newline, spelling: "\n"}
+Read 27 tokens

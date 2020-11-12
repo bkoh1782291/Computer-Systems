@@ -1,0 +1,41 @@
+{kind: space, spelling: " "}
+{kind: {, spelling: "{"}
+{kind: space, spelling: " "}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: }, spelling: "}"}
+{kind: ., spelling: "."}
+{kind: ., spelling: "."}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: (, spelling: "("}
+{kind: space, spelling: " "}
+{kind: ), spelling: ")"}
+{kind: space, spelling: " "}
+{kind: ), spelling: ")"}
+{kind: space, spelling: " "}
+{kind: [, spelling: "["}
+{kind: ), spelling: ")"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: newline, spelling: "\n"}
+{kind: ., spelling: "."}
+{kind: ], spelling: "]"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: newline, spelling: "\n"}
+{kind: @, spelling: "@"}
+{kind: space, spelling: " "}
+{kind: ., spelling: "."}
+{kind: @, spelling: "@"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+
+***** Fatal error!
+error: Expected: "=" but found: ' '
+Read 37 tokens

@@ -1,0 +1,42 @@
+
+***** Fatal error!
+error: Expected: "one of 'e' or 'E'" but found: ' '
+Read 20 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 19
+    {kind: space, spelling: " ", line: 2, column: 1}
+token_context:
+   1:  0 4 36 12125 888 34 000 235$
+   2:  
+      ^
+
+----------------
+token: 14
+    {kind: integer, spelling: "0", line: 1, column: 23}
+token_context:
+   1:  0 4 36 12125 888 34 00
+                            ^
+
+----------------
+token: 9
+    {kind: integer, spelling: "888", line: 1, column: 15}
+token_context:
+   1:  0 4 36 12125 888
+                    ^
+
+----------------
+token: 4
+    {kind: space, spelling: " ", line: 1, column: 5}
+token_context:
+   1:  0 4 
+          ^
+
+----------------

@@ -1,0 +1,32 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org"}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems""}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press."}
+{kind: eol_comment, spelling: " File name: projects/11/Pong/Ball.jack"}
+{kind: newline, spelling: "\n"}
+{kind: adhoc_comment, spelling: "*\n * A graphic ball. Has a screen location and distance of last destination.\n * Has methods for drawing, erasing and moving on the screen.\n * The ball's dimensions are 6X6 pixels.\n "}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "class"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "Ball"}
+{kind: space, spelling: " "}
+{kind: {, spelling: "{"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: eol_comment, spelling: " The ball's screen location (in pixels)"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "field"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "int"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "x"}
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: ','
+Read 28 tokens

@@ -1,0 +1,33 @@
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: while, spelling: "while"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: done, spelling: "done"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: if-goto, spelling: "if-goto"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: this, spelling: "this"}
+{kind: newline, spelling: "\n"}
+{kind: done, spelling: "done"}
+{kind: space, spelling: " "}
+{kind: procedure, spelling: "procedure"}
+{kind: space, spelling: " "}
+{kind: while, spelling: "while"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "$this"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+Read 32 tokens

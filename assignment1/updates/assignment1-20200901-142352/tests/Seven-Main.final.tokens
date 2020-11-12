@@ -1,0 +1,44 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org"}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems""}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press."}
+{kind: eol_comment, spelling: " File name: projects/11/Seven/Main.jack"}
+{kind: newline, spelling: "\n"}
+{kind: adhoc_comment, spelling: "*\n * Computes the value of 1 + (2 * 3) and prints the result\n *  at the top-left of the screen.  \n "}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "class"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "Main"}
+{kind: space, spelling: " "}
+{kind: {, spelling: "{"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "function"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "void"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "main"}
+{kind: (, spelling: "("}
+{kind: ), spelling: ")"}
+{kind: space, spelling: " "}
+{kind: {, spelling: "{"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "do"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "Output.printInt"}
+{kind: (, spelling: "("}
+{kind: integer, spelling: "1"}
+{kind: space, spelling: " "}
+
+***** Fatal error!
+error: Expected: "=" but found: ' '
+Read 40 tokens

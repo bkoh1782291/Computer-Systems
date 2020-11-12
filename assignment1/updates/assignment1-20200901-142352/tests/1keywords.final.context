@@ -1,0 +1,65 @@
+Read 32 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 31
+    {kind: newline, spelling: "\n", line: 7, column: 1}
+token_context:
+   6:   $this$
+   7: $
+      ^
+
+----------------
+token: 26
+    {kind: newline, spelling: "\n", line: 5, column: 21}
+token_context:
+   4:         this$
+   5: done procedure while$
+                          ^
+
+----------------
+token: 21
+    {kind: done, spelling: "done", line: 5, column: 1}
+token_context:
+   4:         this$
+   5: done
+      ^
+
+----------------
+token: 16
+    {kind: space, spelling: " ", line: 4, column: 6}
+token_context:
+   3: done   if-goto$
+   4:       
+           ^
+
+----------------
+token: 11
+    {kind: space, spelling: " ", line: 4, column: 1}
+token_context:
+   3: done   if-goto$
+   4:  
+      ^
+
+----------------
+token: 6
+    {kind: space, spelling: " ", line: 3, column: 5}
+token_context:
+   2: $
+   3: done 
+          ^
+
+----------------
+token: 1
+    {kind: space, spelling: " ", line: 1, column: 2}
+token_context:
+   1:   
+       ^
+
+----------------

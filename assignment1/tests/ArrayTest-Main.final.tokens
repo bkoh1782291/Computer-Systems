@@ -1,0 +1,45 @@
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "class"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "Main"}
+{kind: space, spelling: " "}
+{kind: {, spelling: "{"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "function"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "void"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "main"}
+{kind: (, spelling: "("}
+{kind: ), spelling: ")"}
+{kind: space, spelling: " "}
+{kind: {, spelling: "{"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "var"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "Array"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "r"}
+
+***** Fatal error!
+error: Expected: "a character that can start a token" but found: ';'
+Read 41 tokens
